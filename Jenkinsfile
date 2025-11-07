@@ -89,11 +89,11 @@ pipeline {
             steps{
                 script{
                         dir('backend'){
-                            docker_build("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","madhupdevops")
+                            docker_build("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","ram492")
                         }
                     
                         dir('frontend'){
-                            docker_build("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","madhupdevops")
+                            docker_build("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","ram492")
                         }
                 }
             }
